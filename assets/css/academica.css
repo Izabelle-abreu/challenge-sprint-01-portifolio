@@ -1,0 +1,169 @@
+.academica {
+    background: var(--cor-de-fundo-azul);
+    height: 581px;
+    padding-top: 82px;
+    text-align: center;
+    width: 100vw;
+}
+
+.academica__titulo {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+
+.academica__cursos {
+    display: flex;
+    justify-content: center;
+}
+
+.academica__cursos__caixa {
+    background-color: var(--cor-branco);
+    display: flex;
+    height: 286px;
+    margin: 16px;
+    width: 368px;
+}
+
+.academica__cursos__caixa.eq {
+    background-image: url("../img/eq-logo.png");
+    background-position: center;
+    
+}
+
+.academica__cursos__caixa.centec {
+    background-image: url("../img/centec-logo.png");
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.academica__cursos__caixa.alura {
+    background-image: url("../img/alura-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.academica__cursos__lista {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+}
+
+
+.academica__cursos__item--titulo {
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin-top: 235px;
+}
+
+.academica__cursos__item--subtitulo {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    margin-top: -30px;
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+    .academica {
+        height: 291px;
+        padding-bottom: 16px;
+        padding-top: 40px;
+        width: 768px;
+    }
+
+    .academica__titulo {
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+
+    .academica__cursos__caixa {
+        height: 118px;
+        padding: 16px;
+        width: 224px;
+    }
+
+    .academica__cursos__caixa.eq {
+        background-size: cover;
+    }
+
+    .academica__cursos__lista {
+        margin-left: -15px;
+        margin-top: -130px;
+    }
+    
+    .academica__cursos__item--titulo  {
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+    .academica__cursos__item--subtitulo {
+        font-size: 14px;
+        line-height: 16.44px;
+        margin-left:  -1PX;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 360px) {
+    .academica {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        justify-content: center;
+        padding: 32px 32px 80px 32px;
+        width: 296px;
+    }
+
+    .academica__titulo {
+        font-size: 22px;
+        height: 26px;
+        line-height: 25.83px;
+        width: 227px;
+    }
+
+    .academica__cursos {
+        flex-direction: column;
+        height: 539px;
+        justify-content: space-between;
+        width: 296px;
+    }
+
+    .academica__cursos__caixa.eq, 
+    .academica__cursos__caixa.centec, 
+    .academica__cursos__caixa.alura {
+        height: 86px;
+        margin: 10px 0px 0px 0px;
+        padding: 16px;
+        width: 264px;
+    }
+
+    .academica__cursos__caixa.eq {
+        background-repeat: no-repeat;
+        background-size: 150px;
+    }
+
+    .academica__cursos__caixa.centec {
+        background-size: 120px;
+        background-repeat: no-repeat;
+    }
+
+    .academica__cursos__caixa.alura {
+        background-size: 80px;
+    }
+
+    .academica__cursos__item--titulo {
+        margin-top: 200px;
+    }
+}

@@ -1,0 +1,37 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo-branco: #F5F5F5;
+   --cor-preto: #464646;
+   --cor-de-fundo-azul: #EAF2FD;
+   --cor-branco: #FFFFFF;
+   --cor-azul: #2A7AE4;
+   
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo-branco) ;
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-de-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-texto);
+}
+
+.all {
+    height: 3755px;
+}
+

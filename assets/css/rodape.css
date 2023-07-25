@@ -1,0 +1,56 @@
+.rodape {
+   align-items: center;
+   background-color: var(--cor-branco);
+   display: flex;
+   height: 90px;
+   justify-content: center;
+   padding: 32px;
+   padding-bottom: 10px;
+   width: 100vw;
+}
+
+.rodape__texto {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    height: 38px;
+    line-height: 18.78px;
+    text-align: center;
+    width: 250px;
+}
+
+.rodape__texto p {
+    margin: auto;
+}
+
+/*TABLET*/
+@media screen and (max-width: 768px){
+    .rodape {
+        height: 38px;
+        padding: 32px;
+        width: 704px;
+    }
+
+    .rodape__texto {
+        height: 38px;
+        line-height: 18.78px;
+        width: 250px;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 360px) {
+    .rodape {
+        height: 38px;
+        padding: 32px;
+        width: 296px;
+    }
+
+    .rodape__texto {
+        font-size: 16px;
+        height: 38px;
+        line-height: 18.78px;
+        width: 243px;
+    }
+}

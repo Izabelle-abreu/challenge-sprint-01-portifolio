@@ -1,0 +1,96 @@
+.cabecalho {
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 32px 0 32px 0;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.cabecalho__logo{
+    width: 24px;
+    height: 24px;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 4px;
+}
+
+.cabecalho__lista {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    text-align: center;
+    width: 642px;
+}
+
+.cabecalho__lista-item{
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    height: 19px;
+    line-height: 18.78px;
+    width: 82px;
+}
+
+.cabecalho__lista-item:hover {
+    font-weight: 700;
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 768px)  {
+    .cabecalho  {
+        height: 56px;
+        padding: 16px 32px 16px 32px;
+        width: 704px;
+    }
+
+    /*Faz com que só o último filho apareça*/
+    .cabecalho__lista li:not(:last-child){
+        display: none;
+    }
+
+    .cabecalho__lista {
+        padding: 0;
+        width: 159px;
+    }
+
+}
+
+/*MOBILE*/
+@media screen and (max-width: 360px) {
+    .cabecalho {
+        align-items: center;
+        height: 24px;
+        justify-content: space-between;
+        padding: 16px;
+        width: 328px;
+    }
+
+    .cabecalho > header {
+        height: 24px;
+        margin: 0;
+        width: 148px;
+    }
+
+    .cabecalho__lista {
+        height: 16px;
+        margin: 0;
+        width: 133px;
+    }
+}

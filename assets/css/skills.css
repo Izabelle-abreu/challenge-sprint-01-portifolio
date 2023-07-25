@@ -1,0 +1,104 @@
+.skills {
+    width: 100vw;
+}
+
+.skills__titulo  {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.skills__linha {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.skills__caixa {
+    background-color: var(--cor-branco);
+    height: 174px;
+    padding: 16px;
+    width: 176px;
+}
+
+.skills__caixa ul {
+    margin-top: 115px;
+    padding: 0;
+}
+
+.skills__img {
+    padding-bottom: 10px;
+}
+
+
+.skills__nome {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+    .skills__titulo {
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+
+    .skills__linha {
+        padding: 32px;
+        width: 704px;
+    }
+
+    .skills__caixa {
+        height: 118px;
+        margin-inline: 8px;
+        width: 224px;
+    }
+
+    .skills__caixa ul {
+        margin-top: 40px;
+        padding: 5px;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 360px) {
+    .skills {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        padding: 16px;
+        width: 328px;
+    }
+
+    .skills__linha {
+        flex-wrap: wrap;
+        height: 118px;
+        width: 328px;
+    }
+
+
+    .skills__caixa {
+        height: 86px;
+        margin: 0;
+        padding: 16px;
+        width: 124px;
+    }
+
+    .skills__caixa > ul {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    #ultimaSkill {
+        margin-top: 25px;
+    }
+
+}

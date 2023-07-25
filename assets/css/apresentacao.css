@@ -1,0 +1,174 @@
+.apresentacao {
+    display: flex;
+    height: 368px;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.apresentacao__div {
+    display: flex;
+    padding-left: 6%;
+}
+
+.apresentacao__principal {
+    padding-right: 5%;
+    width: 751px;
+}
+
+.apresentacao__titulo {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61.05px;
+}
+
+.apresentacao__bio {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.83px;
+}
+
+.apresentacao__lista {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 60%;
+}
+
+.apresentacao__lista-item {
+    color: var(--cor-preto);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+}
+
+.apresentacao__lista-item:hover {
+    font-weight: 700;
+}
+
+/*TABLET*/
+@media screen and (max-width: 768px)  {
+    .apresentacao {
+        height: 146px;
+        padding: 32px;
+        width: 704px;
+    }
+
+    .apresentacao__div {
+        justify-content: space-between;
+        padding: 0;
+        width: 704px;
+    }
+
+    .apresentacao__principal {
+        height: 130px;
+        padding: 0;
+        width: 524px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 22px;
+        line-height: 25.83px;
+        width: 524px;
+    }
+
+    .apresentacao__bio {
+        font-size: 16px;
+        line-height: 18.78px;
+        width: 524px;
+    }
+
+    .apresentacao__lista {
+        font-size: 16px;
+        height: 24px;
+        line-height: 18.78px;
+        width: 467px;
+    }
+
+    .apresentacao__lista-item {
+        height: 24px;
+        width: 89px;
+    }
+
+    .apresentacao__img {
+        height: 146px;
+        margin-right: 0;
+        width: 146px;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 360px) {
+    .apresentacao {
+        height: 262px;
+        padding: 16px;
+        width: 328px;
+    }
+
+    .apresentacao__div {
+        flex-direction: column-reverse;
+        height: 292px;
+        justify-content: center;
+        width: 328px;
+    }
+
+    .apresentacao__img {
+        height: 98px;
+        margin: -35px 0px 20px 0px;
+        width: 98px;
+    }
+
+    .apresentacao__principal {
+        height: 148px;
+        width: 328px;
+    }
+
+    .apresentacao__titulo {
+        height: 52px;
+        margin-top: 0;
+        width: 328px;
+    }
+
+    .apresentacao__bio {
+        font-size: 14px;
+        height: 48px;
+        line-height: 16.44px;
+        width: 328px;
+    }
+        
+    .apresentacao__lista {
+        height: 16px;
+        width: 318px;
+    }
+
+    .apresentacao__lista-item {
+        display: contents;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    #github {
+        height: 16px;
+        width: 45px;
+    }
+
+    #linkedin {
+        height: 16px;
+        width: 57px;
+    }
+
+    #instagram {
+        height: 16px;
+        width: 67px;
+    }
+
+    #curriculo {
+        height: 16px;
+        width: 61px;
+    }
+}
