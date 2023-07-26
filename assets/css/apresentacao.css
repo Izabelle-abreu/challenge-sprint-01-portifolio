@@ -51,6 +51,10 @@
     font-weight: 700;
 }
 
+.apresentacao__img {
+    border-radius: 100%;
+}
+
 /*TABLET*/
 @media screen and (max-width: 768px)  {
     .apresentacao {
