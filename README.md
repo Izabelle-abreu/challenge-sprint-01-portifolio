@@ -8,7 +8,6 @@
 ###  Sobre o desafio:
 ---
 #### Requisitos:
----
 #### 🔹Deve ter um menu de navegação;
 #### 🔹Deve ter uma imagem que servirá de banner;
 #### 🔹Deve conter uma seção "sobre mim":
