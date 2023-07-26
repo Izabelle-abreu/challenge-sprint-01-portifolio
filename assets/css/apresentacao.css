@@ -2,6 +2,7 @@
     display: flex;
     height: 368px;
     justify-content: space-between;
+    margin-bottom: 30px;
     width: 1136px;
 }
 
@@ -16,34 +17,37 @@
 
 .apresentacao__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 52px;
     font-weight: 700;
+    height: 122px;
     line-height: 61.05px;
+    width: 751px;
 }
 
 .apresentacao__bio {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 22px;
     font-weight: 400;
+    height: 52px;
     line-height: 25.83px;
+    width: 751px;
 }
 
 .apresentacao__lista {
     display: flex;
+    height: 24px;
     justify-content: space-between;
-    padding-left: 0;
-    width: 60%;
+    padding: 0;
+    width: 467px;
 }
 
 .apresentacao__lista-item {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 500;
     line-height: 18.78px;
 }
+
 
 .apresentacao__lista-item:hover {
     font-weight: 700;
@@ -51,6 +55,9 @@
 
 .apresentacao__img {
     border-radius: 100%;
+    height: 368px;
+    margin: 0px 0px 0px 17px;
+    width: 368px;
 }
 
 /*TABLET*/

@@ -1,13 +1,19 @@
 .sobre {
     background: var(--cor-de-fundo-azul);
-    height: 383px;
+    display: flex;
+    height: 255px;
+    justify-content: center;
     padding: 64px;
-    width: 100vw;
+    width: 1312px;
+}
+
+.sobre__container {
+    height: 255px;
+    width: 1136px;
 }
 
 .sobre__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 32px;
     font-weight: 700;
     line-height: 37.57px;
@@ -15,7 +21,6 @@
 
 .sobre__paragrafo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;

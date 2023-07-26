@@ -19,7 +19,6 @@ header {
 
 .cabecalho__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 700;
     line-height: 18.78px;
@@ -38,7 +37,6 @@ header {
 
 .cabecalho__lista-item{
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 500;
     height: 19px;
