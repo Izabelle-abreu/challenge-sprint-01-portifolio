@@ -1,12 +1,10 @@
 .experiencia {
     height: 590px;
-    padding: 64px;
-    width: 100%;
+    width: 1136px;
 }
 
 .experiencia__secao__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 32px;
     font-weight: 700;
     line-height: 37.57px;
@@ -30,7 +28,6 @@
 
 .experiencia__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 22px;
     font-weight: 700;
     height: 112px;
@@ -41,7 +38,6 @@
 
 .experiencia__texto {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 500;
     height: 19px;
@@ -53,7 +49,6 @@
     background-color: var(--cor-branco);
     border: 1px solid;
     color: var(--cor-azul);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 400;
     height: 40px;
@@ -66,7 +61,6 @@
     background-color: var(--cor-azul);
     border: 1px solid;
     color: var(--cor-branco);
-    font-family: "Raleway";
     font-size: 16px;
     font-weight: 400;
     height: 40px;

@@ -2,16 +2,15 @@
    align-items: center;
    background-color: var(--cor-branco);
    display: flex;
-   height: 90px;
+   height: 38px;
    justify-content: center;
    padding: 32px;
-   padding-bottom: 10px;
-   width: 100vw;
+   width: 1376px;
 }
 
 .rodape__texto {
     color: var(--cor-preto);
-    font-family: "Raleway";
+
     font-size: 16px;
     font-weight: 500;
     height: 38px;

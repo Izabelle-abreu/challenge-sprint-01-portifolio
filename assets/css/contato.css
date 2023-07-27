@@ -1,27 +1,30 @@
-.formcontato {
+.formContato {
+    align-items: center;
     background: var(--cor-de-fundo-azul);
+    display: flex;
     height: 660px;
+    justify-content: center;
     padding: 64px;
-    width: calc(100% - 128px);
+    width: 1312px;
 }
 
-.formcontato__contato {
+.formContato__contato {
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 660px;
+    height: 596px;
     justify-content: space-between;
     padding: 64px 0px 0px 0px;
     width: 1136px;
     
 }
 
-.formcontato--esquerda {
+.formContato--esquerda {
     height: 593px;
     width: 464px;
 }
 
-.formcontato__texto {
+.formContato__texto {
     display: flex;
     flex-direction: column;
     height: 596px;
@@ -29,12 +32,12 @@
     width: 656px;
 }
 
-.formcontato__inicio {
+.formContato__inicio {
     height: 84px;
     width: 656px;
 }
 
-.formcontato__titulo {
+.formContato__titulo {
     color: var(--cor-preto);
     font-family: "Raleway";
     font-size: 32px;
@@ -45,7 +48,7 @@
     width: 123px;
 }
 
-.formcontato__subtexto {
+.formContato__subtexto {
     color: var(--cor-preto);
     font-family: "Raleway";
     font-size: 16px;
@@ -56,14 +59,14 @@
     width: 656px;
 }
 
-.formcontato__form {
+.formContato__form {
     display: flex;
     flex-direction: column;
     height: 397px;
     width: 656px;
 }
 
-.formcontato__input {
+.formContato__input {
     background: var(--cor-branco);
     border-left: none;
     border-radius: 4px;
@@ -79,7 +82,7 @@
     width: 646px;
 }
 
-.formcontato__input::placeholder {
+.formContato__input::placeholder {
     color: var(--cor-preto);
     font-family: "Raleway";
     font-size: 12px;
@@ -88,7 +91,7 @@
     margin-bottom: 10px;
 }
 
-.formcontato__textarea {
+.formContato__textarea {
     background: var(--cor-branco);
     border-left: none;
     border-radius: 4px;
@@ -106,7 +109,7 @@
     width: 646px;
 }
 
-.formcontato__textarea::placeholder {
+.formContato__textarea::placeholder {
     color: var(--cor-preto);
     font-family: "Raleway";
     font-size: 12px;
@@ -116,7 +119,7 @@
     padding-top: 15px;
 }
 
-.formcontato__botao {
+.formContato__botao {
     background-color: var(--cor-azul);
     border: 1px solid;
     color: var(--cor-branco);
@@ -130,7 +133,7 @@
     width: 165px;
 }
 
-.formcontato__botao:hover {
+.formContato__botao:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -144,117 +147,117 @@
     visibility: visible;
 }
 
-.formcontato__form--controle.sucesso .formcontato__input {
+.formContato__form--controle.sucesso .formContato__input {
     border: 3px solid rgb(18, 234, 18);
 }
 
-.formcontato__form--controle.sucesso .formcontato__textarea{
+.formContato__form--controle.sucesso .formContato__textarea{
     border: 3px solid rgb(18, 234, 18);
 }
 
 
-.formcontato__form--controle.erro .formcontato__input {
+.formContato__form--controle.erro .formContato__input {
     border: 3px solid #cc1e1e;
     
 }
-.formcontato__form--controle.erro .formcontato__textarea{
+.formContato__form--controle.erro .formContato__textarea{
     border: 3px solid #cc1e1e;
     
 }
 
-.formcontato__form--controle.erro .mensagem__erro {
+.formContato__form--controle.erro .mensagem__erro {
     color: #cc1e1e;
     visibility: visible;
 }
 
-.formcontato__form--controle.valida__email .mensagem__erro{
+.formContato__form--controle.valida__email .mensagem__erro{
     color: #cc1e1e;
     visibility: visible;
 }
 
 /*TABLET*/
 @media screen and (max-width: 768px) {
-    .formcontato {
+    .formContato {
         height: 620px;
         padding: 32px;
         width: 704px;
     }
 
-    .formcontato--esquerda {
+    .formContato--esquerda {
         display: none;
     }
 
-    .formcontato__texto, .formcontato__contato {
+    .formContato__texto, .formContato__contato {
         height: 537px;
         padding: 0;
         width: 704px;
     }
 
-    .formcontato__inicio {
+    .formContato__inicio {
         height: 72px;
     }
 
-    .formcontato__titulo {
+    .formContato__titulo {
         font-size: 22px;
         line-height: 25.83px;
     }
 
-    .formcontato__input {
+    .formContato__input {
         height: 56px;
         margin-top: 15px;
         width: 694px;
     }
 
-    .formcontato__textarea {
+    .formContato__textarea {
         height: 133px;
         width: 694px;
     }
 
-    .formcontato__botao {
+    .formContato__botao {
         margin-top: 15px;
     }
 }
 
 /*MOBILE*/
 @media screen and (max-width: 360px) {
-    .formcontato {
+    .formContato {
         height: 655px;
         padding: 32px;
         width: 296px;
     }
 
-    .formcontato__contato,
-    .formcontato__texto {
+    .formContato__contato,
+    .formContato__texto {
         height: 611px;
         width: 296px;
     }
 
-    .formcontato__inicio {
+    .formContato__inicio {
         height: 110px;
         width: 296px;
     }
 
-    .formcontato__titulo {
+    .formContato__titulo {
         height: 26px;
         margin-bottom: 5px;
         width: 85px;
     }
 
-    .formcontato__subtexto {
+    .formContato__subtexto {
         width: 296px;
     }
 
-    .formcontato__form {
+    .formContato__form {
         height: 397px;
         width: 296px;
     }
 
-    .formcontato__input,
-    .formcontato__textarea {
+    .formContato__input,
+    .formContato__textarea {
         width: 286px;
     }
 
-    .formcontato__botao {
+    .formContato__botao {
         height: 40px;
         width: 151px;
     }

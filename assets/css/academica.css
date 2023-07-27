@@ -1,14 +1,13 @@
 .academica {
     background: var(--cor-de-fundo-azul);
-    height: 581px;
-    padding-top: 82px;
+    height: 418px;
+    padding: 82px;
     text-align: center;
-    width: 100vw;
+    width: 1276px;
 }
 
 .academica__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 32px;
     font-weight: 700;
     line-height: 37.57px;

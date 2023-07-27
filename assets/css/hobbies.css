@@ -1,7 +1,15 @@
 .hobbies {
-    margin-bottom: 50px;
-    padding-top: 5%;
-    width: 100vw;
+    align-items: center;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    margin-bottom: 90px;
+    width: 1440px;
+}
+
+.hobbies__divisao {
+    height: 244px;
+    width: 1136px;
 }
 
 .hobbies__titulo {

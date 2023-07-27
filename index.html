@@ -81,57 +81,61 @@
 
     <!-- Sessão de Skills/Habilidades -->
     <section class="skills">
-        <h3 class="skills__titulo" id="skills">Skills</h3>
-            <div class="skills__linha">
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"><img src="./assets/img/htlm.png"></li>
-                        <li class="skills__nome"> Html 5</li>
-                    </ul>
-                </div>
+        <div class="skills__divisao">
+            <h3 class="skills__titulo" id="skills">Skills</h3>
+                <div class="skills__linha">
+                    <div class="skills__caixa">
+                        <ul>
+                            <li class="skills__img"><img src="./assets/img/htlm.png"></li>
+                            <li class="skills__nome"> Html 5</li>
+                        </ul>
+                    </div>
 
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"> <img src="./assets/img/js_icon.png" alt=""></li>
-                        <li class="skills__nome">Javascript</li>
-                    </ul>
-                </div>
+                    <div class="skills__caixa">
+                        <ul>
+                            <li class="skills__img"> <img src="./assets/img/js_icon.png" alt=""></li>
+                            <li class="skills__nome">Javascript</li>
+                        </ul>
+                    </div>
 
-                <div class="skills__caixa" id="ultimaSkill">
-                    <ul>
-                        <li class="skills__img"> <img src="./assets/img/css_icon.png" alt=""> </li>
-                        <li class="skills__nome">CSS</li>
-                    </ul>
+                    <div class="skills__caixa" id="ultimaSkill">
+                        <ul>
+                            <li class="skills__img"> <img src="./assets/img/css_icon.png" alt=""> </li>
+                            <li class="skills__nome">CSS</li>
+                        </ul>
+                    </div>
                 </div>
         </div>
     </section>
 
     <!-- Sessão de Hobbies -->
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__titulo">Hobbies</h3>
-            <div class="hobbies__linha">
+        <div class="hobbies__divisao">
+            <h3 class="hobbies__titulo">Hobbies</h3>
+                <div class="hobbies__linha">
 
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/headphones_icon.png" alt=""></li>
-                        <li class="hobbies__nome">Ouvir música</li>
-                    </ul>
+                    <div class="hobbies__caixa">
+                        <ul>
+                            <li class="hobbies__img"> <img src="./assets/img/headphones_icon.png" alt=""></li>
+                            <li class="hobbies__nome">Ouvir música</li>
+                        </ul>
+                    </div>
+
+                    <div class="hobbies__caixa">
+                        <ul>
+                            <li class="hobbies__img"><img src="./assets/img/tv_icon.png" alt=""></li>
+                            <li class="hobbies__nome">Assistir séries</li>
+                        </ul>
+                    </div>
+
+                    <div class="hobbies__caixa" id="ultimoHobbie">
+                        <ul>
+                            <li class="hobbies__img"> <img src="./assets/img/forkspoon_icon.png" alt=""> </li>
+                            <li class="hobbies__nome">Cozinhar</li>
+                        </ul>
+                    </div>
+
                 </div>
-
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"><img src="./assets/img/tv_icon.png" alt=""></li>
-                        <li class="hobbies__nome">Assistir séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__caixa" id="ultimoHobbie">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__nome">Cozinhar</li>
-                    </ul>
-                </div>
-
         </div>
     </section>
 
@@ -185,39 +189,39 @@
     </section>
 
         <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contato">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="./assets/img/contact_image.png">
+        <section class="formContato">
+            <div id="contato" class="formContato__contato">
+                <div class="formContato--esquerda">
+                    <img class="formContato__img" src="./assets/img/contact_image.png">
                 </div>
-                <div class="formcontato__texto">
-                    <div class="formcontato__inicio">
-                        <h2 class="formcontato__titulo">Contato</h2>
-                        <h3 class="formcontato__subtexto">Quer entrar em contato comigo?</h3>
-                        <h3 class="formcontato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                <div class="formContato__texto">
+                    <div class="formContato__inicio">
+                        <h2 class="formContato__titulo">Contato</h2>
+                        <h3 class="formContato__subtexto">Quer entrar em contato comigo?</h3>
+                        <h3 class="formContato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     </div>
-                    <form class="formcontato__form">
-                        <div class="formcontato__form--controle">
-                            <input class="formcontato__input" type="text" id="nome" placeholder="Nome" maxlength="50" oninput="atualizaCaracteresNome()">
+                    <form class="formContato__form">
+                        <div class="formContato__form--controle">
+                            <input class="formContato__input" type="text" id="nome" placeholder="Nome" maxlength="50" oninput="atualizaCaracteresNome()">
                             <small class="mensagem__erro" id="erroNome">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__nome" >Máximo 50 caracteres</span>
                         </div>
-                        <div class="formcontato__form--controle">
-                            <input class="formcontato__input" type="email" id="email" placeholder="Email" maxlength="50" oninput="atualizaCaracteresEmail()">
+                        <div class="formContato__form--controle">
+                            <input class="formContato__input" type="email" id="email" placeholder="Email" maxlength="50" oninput="atualizaCaracteresEmail()">
                             <small class="mensagem__erro" id="erroEmail">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__email">Máximo 50 caracteres</span>
                         </div>
-                        <div class="formcontato__form--controle">
-                            <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" maxlength="50" oninput="atualizaCaracteresAssunto()">
+                        <div class="formContato__form--controle">
+                            <input class="formContato__input" type="text" id="assunto" placeholder="Assunto" maxlength="50" oninput="atualizaCaracteresAssunto()">
                             <small class="mensagem__erro" id="erroAssunto">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__assunto">Máximo 50 caracteres</span>
                         </div>
-                        <div class="formcontato__form--controle">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem" maxlength="300" oninput="atualizaCaracteresMensagem()"></textarea>
+                        <div class="formContato__form--controle">
+                            <textarea class="formContato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem" maxlength="300" oninput="atualizaCaracteresMensagem()"></textarea>
                             <small class="mensagem__erro" id="erroMensagem">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__mensagem">Máximo 300 caracteres</span>
                         </div>
-                        <button class="formcontato__botao" type="submit">Enviar mensagem</button>
+                        <button class="formContato__botao" type="submit">Enviar mensagem</button>
                     </form>
                     
                 </div>
