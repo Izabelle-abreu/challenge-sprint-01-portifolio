@@ -70,24 +70,24 @@
 
     .apresentacao__div {
         justify-content: space-between;
-        padding: 0;
         width: 704px;
     }
 
     .apresentacao__principal {
         height: 130px;
-        padding: 0;
         width: 524px;
     }
 
     .apresentacao__titulo {
         font-size: 22px;
+        height: 52px;
         line-height: 25.83px;
         width: 524px;
     }
 
     .apresentacao__bio {
         font-size: 16px;
+        height: 38px;
         line-height: 18.78px;
         width: 524px;
     }
@@ -112,7 +112,7 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .apresentacao {
         height: 262px;
         padding: 16px;

@@ -1,5 +1,5 @@
 //Seu JavaScript de validação aqui
-const formulario = document.querySelector(".formcontato__form");
+const formulario = document.querySelector(".formContato__form");
 const nome = document.querySelector("#nome");
 const email= document.querySelector("#email");
 const assunto = document.querySelector("#assunto");
@@ -62,14 +62,14 @@ function validacaoDeErro(input, message){
     mensagemDeErro.innerText = message;
     const contador = document.querySelector(".caracteres");
     contador.innerText = "";
-    controleDeFormulario.className = "formcontato__form--controle erro";
+    controleDeFormulario.className = "formContato__form--controle erro";
   
 }
 
 function validacaoDeSucesso(input){
     const controleDeFormulario = input.parentElement;
     
-    controleDeFormulario.className = "formcontato__form--controle sucesso";
+    controleDeFormulario.className = "formContato__form--controle sucesso";
 
 }
 
@@ -125,7 +125,7 @@ function atualizaCaracteresMensagem() {
 email.addEventListener("keyup", () => {
     const mensagemDeErro = document.querySelector("#erroEmail");
     if(validaEmail(email.value) !== true){
-        mensagemDeErro.className = "formcontato__form--controle valida__email";
+        mensagemDeErro.className = "formContato__form--controle valida__email";
         mensagemDeErro.textContent = "O formato do email deve ser texto@texto.com"
     }else {
         mensagemDeErro.textContent = "";
@@ -139,10 +139,10 @@ function validaEmail(email) {
 
 function validarFormulario(){
     verificaEntrada();
-    const itemsFormulario = formulario.querySelectorAll(".formcontato__form--controle");
+    const itemsFormulario = formulario.querySelectorAll(".formContato__form--controle");
 
     const eValido = [...itemsFormulario].every( (item) => {
-        return item.className === "formcontato__form--controle sucesso";
+        return item.className === "formContato__form--controle sucesso";
     });
 
     if(eValido) {

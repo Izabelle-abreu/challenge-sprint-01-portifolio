@@ -70,7 +70,7 @@ header {
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .cabecalho {
         align-items: center;
         height: 24px;

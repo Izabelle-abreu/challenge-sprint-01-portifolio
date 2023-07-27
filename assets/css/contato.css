@@ -178,7 +178,8 @@
 /*TABLET*/
 @media screen and (max-width: 768px) {
     .formContato {
-        height: 620px;
+        align-items: baseline;
+        height: 698px;
         padding: 32px;
         width: 704px;
     }
@@ -187,6 +188,10 @@
         display: none;
     }
 
+    .formContato__form {
+        height: 450px;
+        width: 704px;
+    }
     .formContato__texto, .formContato__contato {
         height: 537px;
         padding: 0;
@@ -219,7 +224,7 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .formContato {
         height: 655px;
         padding: 32px;

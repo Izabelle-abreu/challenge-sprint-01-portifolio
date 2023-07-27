@@ -146,7 +146,7 @@
             <div class="academica__cursos__caixa eq">
                 <ul class="academica__cursos__lista">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academica__cursos__item--img" id="eq-logo"><img src=""></li>
+                    <!-- <li class="academica__cursos__item--img" id="eq-logo"><img src=""></li> -->
                     <li class="academica__cursos__item--titulo"><h4>Ensino Médio</h4></li>
                     <li class="academica__cursos__item--subtitulo"><p>2014 - EEEP Eusébio de Queiroz</p></li>
                 </ul>
@@ -154,7 +154,7 @@
             <div class="academica__cursos__caixa centec">
                 <ul class="academica__cursos__lista">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academica__cursos__item--img" id="centec-logo"><img src=""></li>
+                    <!-- <li class="academica__cursos__item--img" id="centec-logo"><img src=""></li> -->
                     <li class="academica__cursos__item--titulo"><h4>Python Básico</h4></li>
                     <li class="academica__cursos__item--subtitulo"><p>2021 - CENTEC</p></li>
                 </ul>
@@ -162,7 +162,7 @@
             <div class="academica__cursos__caixa alura">
                 <ul class="academica__cursos__lista">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academica__cursos__item--img" id="alura-logo"><img src=""></li>
+                    <!-- <li class="academica__cursos__item--img" id="alura-logo"><img src=""></li> -->
                     <li class="academica__cursos__item--titulo"><h4>Front-End</h4></li>
                     <li class="academica__cursos__item--subtitulo"><p>Em andamento - Alura</p></li>
                 </ul>
@@ -202,22 +202,22 @@
                     </div>
                     <form class="formContato__form">
                         <div class="formContato__form--controle">
-                            <input class="formContato__input" type="text" id="nome" placeholder="Nome" maxlength="50" oninput="atualizaCaracteresNome()">
+                            <input class="formContato__input" type="text" id="nome" placeholder="Nome" maxlength="50" oninput="atualizaCaracteresNome()" required>
                             <small class="mensagem__erro" id="erroNome">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__nome" >Máximo 50 caracteres</span>
                         </div>
                         <div class="formContato__form--controle">
-                            <input class="formContato__input" type="email" id="email" placeholder="Email" maxlength="50" oninput="atualizaCaracteresEmail()">
+                            <input class="formContato__input" type="email" id="email" placeholder="Email" maxlength="50" oninput="atualizaCaracteresEmail()" required>
                             <small class="mensagem__erro" id="erroEmail">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__email">Máximo 50 caracteres</span>
                         </div>
                         <div class="formContato__form--controle">
-                            <input class="formContato__input" type="text" id="assunto" placeholder="Assunto" maxlength="50" oninput="atualizaCaracteresAssunto()">
+                            <input class="formContato__input" type="text" id="assunto" placeholder="Assunto" maxlength="50" oninput="atualizaCaracteresAssunto()" required>
                             <small class="mensagem__erro" id="erroAssunto">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__assunto">Máximo 50 caracteres</span>
                         </div>
                         <div class="formContato__form--controle">
-                            <textarea class="formContato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem" maxlength="300" oninput="atualizaCaracteresMensagem()"></textarea>
+                            <textarea class="formContato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem" maxlength="300" oninput="atualizaCaracteresMensagem()" required></textarea>
                             <small class="mensagem__erro" id="erroMensagem">mensagem de erro</small>
                             <span class="caracteres" id="caracteres__mensagem">Máximo 300 caracteres</span>
                         </div>

@@ -81,18 +81,30 @@
 /*TABLET*/
 @media screen and (max-width: 768px) {
     .experiencia {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 450px;
         padding: 32px;
         width: 704px;
     }
 
     .experiencia__secao__titulo  {
         font-size: 22px;
+        height: 26px;
+        line-height: 25.83px;
+        margin: 0;
+        width: 250px;
     }
 
     .experiencia__caixa {
         flex-direction: column;
         height: 427px;
         width: 704px;
+    }
+
+    .experiencia__caixa > img {
+        height: 320px;
     }
 
     .experiencia__info {
@@ -129,31 +141,32 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .experiencia {
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: 315px;
         justify-content: center;
-        padding: 32px 32px 80px 32px;
+        padding: 32px;
         width: 296px;
     }
 
     .experiencia__secao__titulo {
         height: 26px;
         line-height: 25.83px;
-        margin: 0px 0px 10px 0px;
+        margin: -25px 0px 15px 0px;
         width: 250px;
     }
 
     .experiencia__caixa {
-        height: 170px;
+        height: 251px;
         width: 296px;
     }
 
     .experiencia__img {
         height: 144px;
+        width: 296px;
     }
 
     .experiencia__info {

@@ -53,6 +53,13 @@
 
 /*TABLET*/
 @media screen and (max-width: 768px) {
+    .hobbies {
+        height: 250px;
+        margin: 0;
+        padding: 32px;
+        width: 704px;
+    }
+
     .hobbies__titulo {
         font-size: 22px;
         line-height: 25.83px;
@@ -76,13 +83,21 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .hobbies {
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 400px;
         padding: 16px;
+        width: 328px;
+    }
+
+    .hobbies__divisao {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
         width: 328px;
     }
 

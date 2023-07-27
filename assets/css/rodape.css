@@ -39,7 +39,7 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .rodape {
         height: 38px;
         padding: 32px;

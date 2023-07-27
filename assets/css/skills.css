@@ -54,6 +54,13 @@
 
 /*TABLET*/
 @media screen and (max-width: 768px) {
+    .skills {
+        height: 250px;
+        margin: 0;
+        padding: 32px;
+        width: 704px;
+    }
+
     .skills__titulo {
         font-size: 22px;
         line-height: 25.83px;
@@ -77,13 +84,21 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
     .skills {
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 400px;
         padding: 16px;
+        width: 328px;
+    }
+
+    .skills__divisao {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
         width: 328px;
     }
 
