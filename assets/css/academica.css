@@ -59,7 +59,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 25.83px;
-    margin-top: 235px;
+    margin-top: 260px;
 }
 
 .academica__cursos__item--subtitulo {
@@ -122,6 +122,7 @@
     .academica__cursos__item--titulo  {
         font-size: 16px;
         line-height: 18.78px;
+        margin-top: 220px;
     }
 
     .academica__cursos__item--subtitulo {
