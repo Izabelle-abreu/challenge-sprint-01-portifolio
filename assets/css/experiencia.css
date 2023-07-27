@@ -86,7 +86,8 @@
         flex-direction: column;
         height: 450px;
         padding: 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .experiencia__secao__titulo  {
@@ -149,7 +150,8 @@
         height: 315px;
         justify-content: center;
         padding: 32px;
-        width: 296px;
+        /* width: 296px; */
+        width: calc(100% - 64px);
     }
 
     .experiencia__secao__titulo {

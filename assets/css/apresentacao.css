@@ -65,7 +65,8 @@
     .apresentacao {
         height: 146px;
         padding: 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .apresentacao__div {
@@ -116,7 +117,8 @@
     .apresentacao {
         height: 262px;
         padding: 16px;
-        width: 328px;
+        /* width: 328px; */
+        width: calc(100% - 32px);
     }
 
     .apresentacao__div {

@@ -32,7 +32,8 @@
     .sobre {
         height: 222px;
         padding: 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .sobre__container {
@@ -59,7 +60,8 @@
     .sobre {
         height: 318px;
         padding: 16px;
-        width: 328px;
+        /* width: 328px; */
+        width: calc(100% - 32px);
     }
 
     .sobre__container {

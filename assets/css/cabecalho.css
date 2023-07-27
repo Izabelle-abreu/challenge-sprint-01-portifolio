@@ -54,7 +54,8 @@ header {
     .cabecalho  {
         height: 56px;
         padding: 16px 32px 16px 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 32px);
     }
 
     /*Faz com que só o último filho apareça*/
@@ -76,7 +77,8 @@ header {
         height: 24px;
         justify-content: space-between;
         padding: 16px;
-        width: 328px;
+        /* width: 328px; */
+        width: calc(100% - 32px);
     }
 
     .cabecalho > header {

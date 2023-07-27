@@ -78,7 +78,8 @@
         flex-direction: column;
         height: 227px;
         padding: 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .academica__titulo {
@@ -142,7 +143,8 @@
         height: 600px;
         justify-content: center;
         padding: 32px 32px 80px 32px;
-        width: 296px;
+        /* width: 296px; */
+        width: calc(100% - 64px);
     }
 
     .academica__titulo {

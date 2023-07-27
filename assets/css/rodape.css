@@ -28,7 +28,8 @@
     .rodape {
         height: 38px;
         padding: 32px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .rodape__texto {
@@ -43,7 +44,8 @@
     .rodape {
         height: 38px;
         padding: 32px;
-        width: 296px;
+        /* width: 296px; */
+        width: calc(100% - 64px);
     }
 
     .rodape__texto {
