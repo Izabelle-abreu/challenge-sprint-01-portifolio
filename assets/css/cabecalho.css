@@ -1,15 +1,15 @@
 .cabecalho {
+    align-items: center;
     display: flex;
     height: 88px;
     justify-content: space-between;
     padding: 32px 0px 32px 0px;
-    width: 1136px;
+    width: 85%;
+    /* width: 1136px; */
 }
 
 header {
     display: flex;
-    margin-top: 1rem;
-    width: 15rem;
 }
 
 .cabecalho__logo{
@@ -30,7 +30,6 @@ header {
 .cabecalho__lista {
     display: flex;
     justify-content: space-between;
-    padding-right: 3rem;
     text-align: center;
     width: 642px;
 }
@@ -50,12 +49,12 @@ header {
 
 
 /*TABLET*/
-@media screen and (max-width: 768px)  {
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
     .cabecalho  {
         height: 56px;
         padding: 16px 32px 16px 32px;
-        /* width: 704px; */
-        width: calc(100% - 32px);
+        width: 704px;
+        /* width: calc(100% - 32px); */
     }
 
     /*Faz com que só o último filho apareça*/
@@ -71,14 +70,14 @@ header {
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (max-width:767px) {
     .cabecalho {
         align-items: center;
         height: 24px;
         justify-content: space-between;
         padding: 16px;
-        /* width: 328px; */
-        width: calc(100% - 32px);
+        width: 328px;
+        /* width: calc(100% - 32px); */
     }
 
     .cabecalho > header {
@@ -91,5 +90,10 @@ header {
         height: 16px;
         margin: 0;
         width: 133px;
+    }
+
+    /*Faz com que só o último filho apareça*/
+    .cabecalho__lista li:not(:last-child){
+        display: none;
     }
 }

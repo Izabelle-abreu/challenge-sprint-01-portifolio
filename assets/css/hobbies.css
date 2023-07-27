@@ -52,13 +52,13 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .hobbies {
         height: 250px;
         margin: 0;
         padding: 32px;
-        /* width: 704px; */
-        width: calc(100% - 64px);
+        width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .hobbies__titulo {
@@ -90,9 +90,10 @@
         display: flex;
         flex-direction: column;
         height: 400px;
+        margin-bottom: 0;
         padding: 16px;
-        /* width: 328px; */
-        width: calc(100% - 32px);
+        width: 328px;
+        /* width: calc(100% - 32px); */
     }
 
     .hobbies__divisao {

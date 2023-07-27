@@ -4,12 +4,14 @@
     height: 255px;
     justify-content: center;
     padding: 64px;
-    width: 1312px;
+    /* width: 1312px; */
+    width: calc(100% - 128px);
 }
 
 .sobre__container {
     height: 255px;
-    width: 1136px;
+    /* width: 1136px; */
+    width: calc(100% - 64px);
 }
 
 .sobre__titulo {
@@ -28,17 +30,18 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 479px) and (max-width: 768px) {
     .sobre {
         height: 222px;
         padding: 32px;
-        /* width: 704px; */
-        width: calc(100% - 64px);
+        width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .sobre__container {
         height: 222px;
         width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .sobre__titulo {
@@ -52,6 +55,7 @@
         font-size: 14px;
         line-height: 16.44px;
         width: 704px;
+        /* width: calc(100% - 64px); */
     }
 }
 
@@ -60,16 +64,18 @@
     .sobre {
         height: 318px;
         padding: 16px;
-        /* width: 328px; */
-        width: calc(100% - 32px);
+        width: 328px;
+        /* width: calc(100% - 32px); */
     }
 
     .sobre__container {
         height: 318px;
         width: 328px;
+        /* width: calc(100% - 32px); */
     }
 
     .sobre__paragrafo {
         width: 328px;
+        /* width: calc(100% - 32px); */
     }
 }

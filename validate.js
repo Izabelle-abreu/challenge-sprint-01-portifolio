@@ -16,69 +16,69 @@ formulario.addEventListener("submit", (e) => {
 });
 
 
-function verificaEntrada(){
-    const nomeTexto = nome.value.trim();
-    const emailTexto = email.value.trim();
-    const assuntoTexto = assunto.value.trim();
-    const mensagemTexto = mensagem.value.trim();
+// function verificaEntrada(){
+//     const nomeTexto = nome.value.trim();
+//     const emailTexto = email.value.trim();
+//     const assuntoTexto = assunto.value.trim();
+//     const mensagemTexto = mensagem.value.trim();
 
-    if (nomeTexto === ""){
-        validacaoDeErro(nome, "O campo nome não pode estar vazio");
+//     if (nomeTexto === ""){
+//         validacaoDeErro(nome, "O campo nome não pode estar vazio");
                 
-    } else {
-        validacaoDeSucesso(nome);
+//     } else {
+//         validacaoDeSucesso(nome);
         
         
-    }
+//     }
 
-    if (emailTexto === ""){
-        validacaoDeErro(email, "O campo email não pode estar vazio");
+//     if (emailTexto === ""){
+//         validacaoDeErro(email, "O campo email não pode estar vazio");
                 
-    } else {
-        validacaoDeSucesso(email);
-    }
+//     } else {
+//         validacaoDeSucesso(email);
+//     }
 
-    if (assuntoTexto === ""){
-        validacaoDeErro(assunto, "O campo assunto não pode estar vazio");
+//     if (assuntoTexto === ""){
+//         validacaoDeErro(assunto, "O campo assunto não pode estar vazio");
                 
-    } else {
-        validacaoDeSucesso(assunto);
-    }
+//     } else {
+//         validacaoDeSucesso(assunto);
+//     }
 
-    if (mensagemTexto === ""){
-        validacaoDeErro(mensagem, "O campo de mensagem não pode estar vazio");
+//     if (mensagemTexto === ""){
+//         validacaoDeErro(mensagem, "O campo de mensagem não pode estar vazio");
                 
-    } else {
-        validacaoDeSucesso(mensagem);
-    }
+//     } else {
+//         validacaoDeSucesso(mensagem);
+//     }
         
-}
+// }
 
 
-function validacaoDeErro(input, message){
-    const controleDeFormulario = input.parentElement;
-    const mensagemDeErro = controleDeFormulario.querySelector(".mensagem__erro");
+// function validacaoDeErro(input, message){
+//     const controleDeFormulario = input.parentElement;
+//     const mensagemDeErro = controleDeFormulario.querySelector(".mensagem__erro");
 
-    mensagemDeErro.innerText = message;
-    const contador = document.querySelector(".caracteres");
-    contador.innerText = "";
-    controleDeFormulario.className = "formContato__form--controle erro";
+//     mensagemDeErro.innerText = message;
+//     const contador = document.querySelector(".caracteres");
+//     contador.innerText = "";
+//     controleDeFormulario.className = "formContato__form--controle erro";
   
-}
+// }
 
-function validacaoDeSucesso(input){
-    const controleDeFormulario = input.parentElement;
+// function validacaoDeSucesso(input){
+//     const controleDeFormulario = input.parentElement;
     
-    controleDeFormulario.className = "formContato__form--controle sucesso";
+//     controleDeFormulario.className = "formContato__form--controle sucesso";
 
-}
+// }
 
 function atualizaCaracteresNome() {
     const textoNome = nome.value;
     const caracteresNome = textoNome.length;
-    const mensagemDeErro = document.querySelector("#erroNome");
+    // const mensagemDeErro = document.querySelector("#erroNome");
     
-    mensagemDeErro.innerHTML = "";
+    // mensagemDeErro.innerHTML = "";
     
     const contadorNome = document.querySelector("#caracteres__nome");
     contadorNome.innerHTML = `${caracteresNome} / 50 caracteres`;
@@ -88,9 +88,9 @@ function atualizaCaracteresNome() {
 function atualizaCaracteresEmail() {
     const textoEmail = email.value;
     const caracteresEmail = textoEmail.length;
-    const mensagemDeErro = document.querySelector("#erroEmail");
+    // const mensagemDeErro = document.querySelector("#erroEmail");
     
-    mensagemDeErro.innerHTML = "";
+    // mensagemDeErro.innerHTML = "";
     
     const contadorEmail = document.querySelector("#caracteres__email");
     contadorEmail.innerHTML = `${caracteresEmail} / 50 caracteres`;
@@ -100,9 +100,9 @@ function atualizaCaracteresEmail() {
 function atualizaCaracteresAssunto() {
     const textoAssunto = assunto.value;
     const caracteresAssunto = textoAssunto.length;
-    const mensagemDeErro = document.querySelector("#erroAssunto");
+    // const mensagemDeErro = document.querySelector("#erroAssunto");
     
-    mensagemDeErro.innerHTML = "";
+    // mensagemDeErro.innerHTML = "";
     
     const contadorAssunto = document.querySelector("#caracteres__assunto");
     contadorAssunto.innerHTML = `${caracteresAssunto} / 50 caracteres`;
@@ -113,9 +113,9 @@ function atualizaCaracteresAssunto() {
 function atualizaCaracteresMensagem() {
     const textoMensagem =mensagem.value;
     const caracteresMensagem = textoMensagem.length;
-    const mensagemDeErro = document.querySelector("#erroMensagem");
+    // const mensagemDeErro = document.querySelector("#erroMensagem");
     
-    mensagemDeErro.innerHTML = "";
+    // mensagemDeErro.innerHTML = "";
     
     const contadorMensagem = document.querySelector("#caracteres__mensagem");
     contadorMensagem.innerHTML = `${caracteresMensagem} / 300 caracteres`;
@@ -137,17 +137,27 @@ function validaEmail(email) {
     return emailRegex.test(email);
 }
 
+// function validarFormulario(){
+//     // verificaEntrada();
+//     const itemsFormulario = formulario.querySelectorAll(".formContato__form--controle");
+
+//     const eValido = [...itemsFormulario].every( (item) => {
+//         return item.className === "formContato__form--controle sucesso";
+//     });
+
+//     if(eValido) {
+//         alert("FORMULÁRIO ENVIADO COM SUCESSO!")
+//     }
+// }
+
 function validarFormulario(){
-    verificaEntrada();
+
     const itemsFormulario = formulario.querySelectorAll(".formContato__form--controle");
 
     const eValido = [...itemsFormulario].every( (item) => {
-        return item.className === "formContato__form--controle sucesso";
+        alert("FORMULÁRIO ENVIADO COM SUCESSO!")
     });
 
-    if(eValido) {
-        alert("FORMULÁRIO ENVIADO COM SUCESSO!")
-    }
 }
 
 //link do curriculo

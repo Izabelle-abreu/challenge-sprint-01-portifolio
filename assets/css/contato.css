@@ -147,7 +147,7 @@
     visibility: visible;
 }
 
-.formContato__form--controle.sucesso .formContato__input {
+/* .formContato__form--controle.sucesso .formContato__input {
     border: 3px solid rgb(18, 234, 18);
 }
 
@@ -173,16 +173,16 @@
 .formContato__form--controle.valida__email .mensagem__erro{
     color: #cc1e1e;
     visibility: visible;
-}
+} */
 
 /*TABLET*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .formContato {
         align-items: baseline;
         height: 698px;
         padding: 32px;
-        /* width: 704px; */
-        width: calc(100% - 64px);
+        width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .formContato--esquerda {
@@ -192,11 +192,13 @@
     .formContato__form {
         height: 450px;
         width: 704px;
+        /* width: calc(100% - 64px); */
     }
     .formContato__texto, .formContato__contato {
         height: 537px;
         padding: 0;
         width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .formContato__inicio {
@@ -229,19 +231,25 @@
     .formContato {
         height: 655px;
         padding: 32px;
-        /* width: 296px; */
-        width: calc(100% - 64px);
+        width: 296px;
+        /* width: calc(100% - 64px); */
+    }
+
+    .formContato--esquerda {
+        display: none;
     }
 
     .formContato__contato,
     .formContato__texto {
         height: 611px;
         width: 296px;
+        /* width: calc(100% - 64px); */
     }
 
     .formContato__inicio {
         height: 110px;
         width: 296px;
+        /* width: calc(100% - 64px); */
     }
 
     .formContato__titulo {
@@ -252,16 +260,20 @@
 
     .formContato__subtexto {
         width: 296px;
+        /* width: calc(100% - 64px); */
+        /* width: 100%; */
     }
 
     .formContato__form {
         height: 397px;
         width: 296px;
+        /* width: calc(100% - 64px); */
     }
 
     .formContato__input,
     .formContato__textarea {
         width: 286px;
+        /* width: calc(100% - 74px); */
     }
 
     .formContato__botao {

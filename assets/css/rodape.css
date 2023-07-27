@@ -24,12 +24,12 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 768px){
     .rodape {
         height: 38px;
         padding: 32px;
-        /* width: 704px; */
-        width: calc(100% - 64px);
+        width: 704px;
+        /* width: calc(100% - 64px); */
     }
 
     .rodape__texto {
@@ -44,8 +44,8 @@
     .rodape {
         height: 38px;
         padding: 32px;
-        /* width: 296px; */
-        width: calc(100% - 64px);
+        width: 296px;
+        /* width: calc(100% - 64px); */
     }
 
     .rodape__texto {
