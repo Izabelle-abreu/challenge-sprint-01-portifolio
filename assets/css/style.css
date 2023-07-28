@@ -36,5 +36,20 @@ a{
     display: flex;
     flex-direction: column;
     height: auto;
+    max-width: 1440px;
 }
 
+.sessao {
+    display: grid;
+    gap: 10px;
+    height: auto;
+    justify-items: center;
+    padding: 64px;
+    width: calc(100% - 128px);
+}
+
+.container {
+    display: grid;
+    gap: 16px;
+    width: calc(85% - 64px);
+}

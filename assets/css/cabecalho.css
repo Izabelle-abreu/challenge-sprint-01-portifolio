@@ -1,16 +1,33 @@
-.cabecalho {
-    align-items: center;
+#cabecalho {
+    justify-items: center;
+    padding: 32px 0px 32px 0px;
+    /* align-items: center;
     display: flex;
-    height: 88px;
+    min-height: 24px;
     justify-content: space-between;
     padding: 32px 0px 32px 0px;
-    width: 85%;
-    /* width: 1136px; */
+    min-width: 85%; */
+}
+
+#cabecalho__divisao {
+    align-items: center;
+    display: flex;
+    grid-auto-flow: column;
+    justify-content: space-between;
 }
 
 header {
-    display: flex;
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+    /* display: flex; */
+    height: 24px;
+    width: 156px;
 }
+
+/* #cabecalho__divisao {
+    grid-auto-flow: column;
+} */
 
 .cabecalho__logo{
     width: 24px;
@@ -28,10 +45,13 @@ header {
 }
 
 .cabecalho__lista {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    gap: 32px;
+    grid-auto-flow: column;
     text-align: center;
-    width: 642px;
+    max-width: 642px;
 }
 
 .cabecalho__lista-item{
@@ -50,12 +70,18 @@ header {
 
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
-    .cabecalho  {
+    #cabecalho  {
         height: 56px;
         padding: 16px 32px 16px 32px;
-        width: 704px;
-        /* width: calc(100% - 32px); */
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
+
+    #cabecalho__divisao {
+        width: calc(100% - 64px);
+    }
+
+
 
     /*Faz com que só o último filho apareça*/
     .cabecalho__lista li:not(:last-child){
@@ -71,19 +97,27 @@ header {
 
 /*MOBILE*/
 @media screen and (max-width:767px) {
-    .cabecalho {
+    #cabecalho {
         align-items: center;
-        height: 24px;
-        justify-content: space-between;
+        height: 56px;
+        /* height: calc(56px - 32px); */
+        /* justify-content: space-between; */
+        /* justify-content: inherit; */
         padding: 16px;
-        width: 328px;
-        /* width: calc(100% - 32px); */
+        /* width: 328px; */
+        width: calc(100% - 32px);
     }
 
-    .cabecalho > header {
+    #cabecalho__divisao {
+        display: flex;
+        /* justify-content: inherit; */
+        width: 76%;
+    }
+
+    #cabecalho > header {
         height: 24px;
         margin: 0;
-        width: 148px;
+        width: 156px;
     }
 
     .cabecalho__lista {

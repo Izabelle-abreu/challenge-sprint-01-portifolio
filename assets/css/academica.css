@@ -71,15 +71,15 @@
 
 
 /*TABLET*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .academica {
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 227px;
         padding: 32px;
-        width: 704px;
-        /* width: calc(100% - 64px); */
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .academica__titulo {
@@ -92,7 +92,8 @@
 
     .academica__cursos {
         height: 169px;
-        width: 704px;
+        /* width: 704px; */
+        width: calc(100% - 64px);
     }
 
     .academica__cursos__caixa {
