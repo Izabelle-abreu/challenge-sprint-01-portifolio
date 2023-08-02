@@ -1,30 +1,24 @@
-.rodape {
-   align-items: center;
-   background-color: var(--cor-branco);
-   display: flex;
-   height: 38px;
-   justify-content: center;
-   padding: 32px;
-   width: 1376px;
+#rodape {
+    background-color: var(--cor-branco);
+    padding: 32px;
+    width: calc(100% - 64px);
 }
 
-.rodape__texto {
+#rodape__texto {
     color: var(--cor-preto);
-
     font-size: 16px;
     font-weight: 500;
-    height: 38px;
+    gap: 0;
     line-height: 18.78px;
     text-align: center;
-    width: 250px;
 }
 
-.rodape__texto p {
-    margin: auto;
+#rodape__texto p {
+    margin: 0;
 }
 
 /*TABLET*/
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .rodape {
         height: 38px;
         padding: 32px;
@@ -40,7 +34,7 @@
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (max-width:767px) {
     .rodape {
         height: 38px;
         padding: 32px;

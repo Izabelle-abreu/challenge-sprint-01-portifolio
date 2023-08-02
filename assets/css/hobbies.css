@@ -1,4 +1,4 @@
-.hobbies {
+/* .hobbies {
     align-items: center;
     display: flex;
     height: 350px;
@@ -10,21 +10,21 @@
 .hobbies__divisao {
     height: 244px;
     width: 1136px;
-}
+} */
 
 .hobbies__titulo {
     color: var(--cor-preto);
-    font-family: "Raleway";
     font-size: 32px;
     font-weight: 700;
     line-height: 37.57px;
+    margin: 0;
     text-align: center;
 }
 
 .hobbies__linha {
     display: flex;
     justify-content: space-between;
-    padding: 0 200px;
+    /* padding: 0 200px; */
 }
 
 .hobbies__caixa {
@@ -52,14 +52,14 @@
 }
 
 /*TABLET*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .hobbies {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* .hobbies {
         height: 250px;
         margin: 0;
         padding: 32px;
         width: 704px;
-        /* width: calc(100% - 64px); */
-    }
+        width: calc(100% - 64px);
+    } */
 
     .hobbies__titulo {
         font-size: 22px;
@@ -84,8 +84,8 @@
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
-    .hobbies {
+@media screen and (max-width:767px)  {
+    /* .hobbies {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -93,7 +93,7 @@
         margin-bottom: 0;
         padding: 16px;
         width: 328px;
-        /* width: calc(100% - 32px); */
+        width: calc(100% - 32px);
     }
 
     .hobbies__divisao {
@@ -102,12 +102,12 @@
         flex-direction: column;
         height: 400px;
         width: 328px;
-    }
+    } */
 
     .hobbies__linha {
         flex-wrap: wrap;
-        height: 118px;
-        width: 328px;
+        /* height: 118px;
+        width: 328px; */
     }
 
     .hobbies__caixa {

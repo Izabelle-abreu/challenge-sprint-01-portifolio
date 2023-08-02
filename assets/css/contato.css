@@ -1,11 +1,10 @@
-.formContato {
-    align-items: center;
+#formContato {
     background: var(--cor-de-fundo-azul);
+}
+
+#formContato .container {
     display: flex;
-    height: 660px;
     justify-content: center;
-    padding: 64px;
-    width: 1312px;
 }
 
 .formContato__contato {
@@ -62,6 +61,7 @@
 .formContato__form {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     height: 397px;
     width: 656px;
 }
@@ -119,6 +119,16 @@
     padding-top: 15px;
 }
 
+#caracteres__nome, 
+#caracteres__assunto,
+#caracteres__mensagem {
+    margin: 10px 0px 0px 0px;
+}
+
+#caracteres__email {
+    margin: 5px 0px 0px 0px;
+}
+
 .formContato__botao {
     background-color: var(--cor-azul);
     border: 1px solid;
@@ -128,7 +138,6 @@
     font-weight: 400;
     height: 51px;
     line-height: 18.78px;
-    margin-top: 10px;
     padding: 10px 0px 10px 0px;
     width: 165px;
 }
@@ -176,7 +185,7 @@
 } */
 
 /*TABLET*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .formContato {
         align-items: baseline;
         height: 698px;
@@ -227,7 +236,7 @@
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (max-width:767px) {
     .formContato {
         height: 655px;
         padding: 32px;

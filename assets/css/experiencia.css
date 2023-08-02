@@ -1,6 +1,14 @@
-.experiencia {
+/* .experiencia {
     height: 590px;
     width: 1136px;
+} */
+#experiencia {
+    justify-items: center;
+}
+
+#experiencia .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .experiencia__secao__titulo {
@@ -79,7 +87,7 @@
 }
 
 /*TABLET*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .experiencia {
         align-items: center;
         display: flex;
@@ -142,7 +150,7 @@
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (max-width:767px) {
     .experiencia {
         align-items: center;
         display: flex;

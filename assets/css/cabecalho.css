@@ -100,17 +100,12 @@ header {
     #cabecalho {
         align-items: center;
         height: 56px;
-        /* height: calc(56px - 32px); */
-        /* justify-content: space-between; */
-        /* justify-content: inherit; */
         padding: 16px;
-        /* width: 328px; */
         width: calc(100% - 32px);
     }
 
     #cabecalho__divisao {
         display: flex;
-        /* justify-content: inherit; */
         width: 76%;
     }
 

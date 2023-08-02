@@ -1,9 +1,13 @@
-.academica {
+#academica {
     background: var(--cor-de-fundo-azul);
-    height: 418px;
     padding: 82px;
-    text-align: center;
-    width: 1276px;
+    width: calc(100% - 164px);
+}
+
+#academica .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .academica__titulo {
@@ -136,7 +140,7 @@
 }
 
 /*MOBILE*/
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (max-width:767px) {
     .academica {
         align-items: center;
         display: flex;
